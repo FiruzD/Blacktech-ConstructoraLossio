@@ -105,6 +105,7 @@
                 <a  href="{{ route('login') }}" class="text-sm text-green-500 dark:text-gray-500 underline">Iniciar
                     Sesión</a>
             </button>
+
         </div>
     </header>
     <footer class="main-footer">

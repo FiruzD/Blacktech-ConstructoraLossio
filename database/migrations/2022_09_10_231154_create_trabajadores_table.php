@@ -13,16 +13,17 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('trabajadores', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
-            $table->foreignId('current_team_id')->nullable();
-            $table->string('profile_photo_path', 2048)->nullable();
+            $table->string('nombres', 50);
+            $table->string('apellidos', 50);
+            $table->string('documento', 12);
+            $table->boolean('estado')->default(true);
+            $table->unsignedInteger('categoria_id');
             $table->timestamps();
+
+            $table->foreign('categoria_id')->references('id')
+                ->on('categorias_trabajador');
         });
     }
 
@@ -33,6 +34,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('trabajadores');
     }
 };

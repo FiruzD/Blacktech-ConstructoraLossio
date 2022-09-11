@@ -63,7 +63,7 @@ return [
     |
     */
 
-    'logo' => '<b>Constructora Ortiz</b>',
+    'logo' => '<b> </b>',
     'logo_img' => 'vendor/adminlte/dist/img/logo.png',
     'logo_img_class' => 'brand-image elevation-3',
     'logo_img_xl' => 'vendor/adminlte/dist/img/logo_completo2.png',
@@ -89,8 +89,8 @@ return [
             'path' => 'vendor/adminlte/dist/img/logo.png',
             'alt' => 'Auth Logo',
             'class' => '',
-            'width' => 50,
-            'height' => 50,
+            'width' => 100,
+            'height' => 100,
         ],
     ],
 
@@ -112,8 +112,8 @@ return [
             'path' => 'vendor/adminlte/dist/img/logo.png',
             'alt' => 'Logo Preloader Image',
             'effect' => 'animation__shake',
-            'width' => 60,
-            'height' => 60,
+            'width' => 100,
+            'height' => 100,
         ],
     ],
 
@@ -315,12 +315,15 @@ return [
             'route'  => 'dash',
             'icon' => 'fas fa-fw fa-home'
         ],
+
+
         ['header' => 'Configuración de la cuenta'],
         [
             'text' => 'Perfil de Usuario',
             'url'  => 'user/profile',
             'icon' => 'fas fa-fw fa-user',
         ],
+
 
         ['header' => 'Registros'],
         [
@@ -361,6 +364,7 @@ return [
             'icon' => 'fas fa-fw fa-lock',
         ],
 
+
         ['header' => 'Membresías'],
         [
             'text' => 'Usuarios',
@@ -368,22 +372,6 @@ return [
             'icon' => 'fas fa-fw fa-lock',
         ],
 
-        ['header' => 'Etiquetas'],
-        [
-            'text'       => 'importante',
-            'icon_color' => 'red',
-            'url'        => '#',
-        ],
-        [
-            'text'       => 'Peligro',
-            'icon_color' => 'yellow',
-            'url'        => '#',
-        ],
-        [
-            'text'       => 'información',
-            'icon_color' => 'cyan',
-            'url'        => '#',
-        ],
     ],
 
     /*
